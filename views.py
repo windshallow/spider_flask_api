@@ -25,6 +25,7 @@ def heartbeat():
     ret['status'] = 0
     return json.dumps(ret)
 
+
 @app.route('/getspiders')
 def get_spiders():
     ret = {}
@@ -73,7 +74,6 @@ def remove_task():
     scheduler.remove_job(id=carrier)
     ret['status'] = 0
     return json.dumps(ret)
-
 
 
 @app.route('/gettask')
